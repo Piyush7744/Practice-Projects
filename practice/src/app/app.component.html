@@ -1,0 +1,19 @@
+<!-- <input type="text" (ngModelChange)="event" name="data">
+<p>{{data}}</p> -->
+<router-outlet></router-outlet>
+
+<!-- <input type="text" [(ngModel)]="data" name="data">
+<p>{{data}}</p>
+<button (click)="event1()">Click me</button> -->
+
+  <form [formGroup]="login" (submit)="event1()">
+    <label for="name">Enter Name:</label>
+    <input type="text" id="name" name="name" formControlName="name">
+
+    <label for="password">Enter Password</label>
+    <input type="text" id="password" name="name" formControlName="password">
+
+    <button type="submit">Submit</button>
+  </form>
+
+<!-- <button (click)="event1()">Click me</button> -->

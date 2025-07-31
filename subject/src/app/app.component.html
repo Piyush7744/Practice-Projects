@@ -1,0 +1,19 @@
+<button (click)="subjectData()">
+  Subject
+</button>
+
+<button (click)="observableData()">
+  Observable
+</button>
+
+<button (click)="destroyButton()">Show/Hide Observable</button>
+
+<div>
+  Observable Data {{observableValue}}{{ob1}}<span>Second number : </span>{{ob2}}
+</div>
+
+<div>
+  Subject Data {{subjectValue}}{{sb1}}<span>Second number : </span>{{sb2}}
+</div>
+<app-subject-vs-behaviour-subject *ngIf="toDestroy"></app-subject-vs-behaviour-subject>
+<router-outlet></router-outlet>
