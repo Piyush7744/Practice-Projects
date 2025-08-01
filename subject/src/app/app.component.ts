@@ -19,7 +19,7 @@ export class AppComponent {
   toDestroy = true;
 
   destroyButton() {
-    this.toDestroy = false;
+    this.toDestroy = !this.toDestroy;
   }
 
   observableData() {

@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SubjectVsBehaviourSubjectComponent } from './subject-vs-behaviour-subject/subject-vs-behaviour-subject.component';
+import { CustomDirectiveDirective } from './CustomeDirective/custom-directive.directive';
+import { CustomDirective2Directive } from './CustomeDirective/custom-directive2.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SubjectVsBehaviourSubjectComponent
+    SubjectVsBehaviourSubjectComponent,
+    CustomDirectiveDirective,
+    CustomDirective2Directive
   ],
   imports: [
     BrowserModule,

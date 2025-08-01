@@ -1,0 +1,19 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-card {
+    font: italic;
+    max-width: 300px;
+}
+
+p {
+    font-style: italic;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
